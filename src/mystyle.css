@@ -1,0 +1,40 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar-group{
+    background-color: #f30333;
+}
+
+#navbar-group:hover{
+    background-color: #000000;
+}
+
+#navbar-group ul{
+    display:flex;
+    justify-content:end;
+    list-style-type: none;
+
+    gap: 2rem;
+}
+
+#navbar-group a{
+    text-decoration: none;
+    font-size:1.25rem;
+    color:#fff;
+}
+
+#navbar-group a:hover{
+    color: #f30333;
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+
+
+table th, td{
+    border:solid;
+}
