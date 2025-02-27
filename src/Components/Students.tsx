@@ -1,11 +1,13 @@
 import StudentTable from "./StudentTable";
-
+import StudentForm from "./StudentForm";
 
 const Students = () => {
     return (
         <>
         <h1>Students Page</h1>
-        <StudentTable/>
+        <StudentForm />
+        <StudentTable />
+        
         </>
     )
 }

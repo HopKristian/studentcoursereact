@@ -30,8 +30,8 @@ const CourseTable = () => {
     return (
         
         <div id="course-table-group">
-            <button id="get-course-button" onClick={getCourse}>Get courses</button>
-            <table>
+            <button className="btn btn-warning" id="get-course-button" onClick={getCourse}>Get courses</button>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -40,18 +40,18 @@ const CourseTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-    {courses.map(course => (
-        <tr key={course.id}>
-            <td>{course.id}</td>
-            <td>{course.name}</td>
-            <td>
-                {course.students.length > 0 
-                    ? course.students.map(student => student.name).join(', ')
-                    : "No students"}
-            </td>
-        </tr>
-    ))}
-</tbody>
+                {courses.map(course => (
+                    <tr key={course.id}>
+                        <td>{course.id}</td>
+                        <td>{course.name}</td>
+                        <td>
+                            {course.students.length > 0 
+                                ? course.students.map(student => student.name).join(', ')
+                                : "No students"}
+                        </td>
+                    </tr>
+                    ))}
+                </tbody>
 
             </table>
         </div>

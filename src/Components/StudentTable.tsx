@@ -35,7 +35,7 @@ const StudentTable = () => {
     return (
         
         <div id="student-table-group">
-            <button id="get-students-button" onClick={getStudents}>Get students</button>
+            <button className="btn btn-primary" id="get-students-button" onClick={getStudents}>Get students</button>
             <table>
                 <thead>
                     <tr>
